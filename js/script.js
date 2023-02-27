@@ -71,6 +71,7 @@ function gerarId() {
 
 function exibirListas(filtrado, array) {
   let lista = "";
+  array.sort(function (a, b) { return b.preco - a.preco; });
 
   if (!filtrado) {
     array.forEach(function (item) {
